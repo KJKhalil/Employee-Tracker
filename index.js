@@ -36,7 +36,39 @@ function begin() {
     .then((res)=>{
         console.log(res.begin);
         switch(res.begin){
-            
+            case 'View departments':
+                viewDeparments();
+                break;
+            case 'View employees':
+                viewEmployees();
+                break;
+            case 'View roles':
+                viewRoles();
+                break;
+            case 'Update employee roles':
+                updateRoles();
+                break;
+            case 'Add a department':
+                addDeparments();
+                break;
+            case 'Add an employee':
+                addEmployees();
+                break;
+            case 'Add a role':
+                addRoles();
+                break;
+            case 'Delete a department':
+                deleteDepartments();
+                break;
+            case 'Delete an employee':
+                deleteEmployees();
+                break;
+            case 'Delete a role':
+                deleteRoles();
+                break;
+            case 'Exit':
+                connection.end();
+                break;
         }
-    })
-}
+    });
+};
