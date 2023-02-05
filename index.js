@@ -1,10 +1,10 @@
 // Dependencies
-const mysq12 = require('mysq12')
+const mysql2 = require('mysql2')
 const inquirer = require('inquirer')
 const console = require('console.table')
 
 // SQL Connection
-const connection = mysq12.createConnection({
+const connection = mysql2.createConnection({
     host: 'localhost',
     port: '3306',
     user: 'root',
